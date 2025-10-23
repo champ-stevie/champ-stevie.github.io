@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Test Dashboard — GitHub Pages (Local Storage)</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header><h1>Test Dashboard</h1><p>Browser-only app using localStorage.</p></header>
+    <main>
+      <section>
+        <h2>Upload/Download CSV</h2>
+        <input type="file" id="importCSV" accept=".csv">
+        <button id="exportCSV">Export CSV</button>
+      </section>
+      <section>
+        <h2>Tests</h2>
+        <ul id="toDoList"></ul>
+        <ul id="completedList"></ul>
+      </section>
+      <canvas id="scoresChart"></canvas>
+    </main>
+    <footer><small>Static GitHub Pages App.</small></footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
